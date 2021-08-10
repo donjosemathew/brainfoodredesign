@@ -1,0 +1,30 @@
+.whybrainfood {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  width: 100%;
+  &__head {
+    span {
+      color: #7569de;
+    }
+  }
+  &__img1 {
+    height: 28rem;
+  }
+  &__col {
+    padding: 2rem;
+    width: 100%;
+  }
+  &__col1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text {
+    span {
+      display: block;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.966);
+    }
+  }
+}
