@@ -4,6 +4,20 @@
   //background-color: rebeccapurple;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  @media only screen and (max-width: 56.25em) {
+    display: block;
+    //background-color: red;
+    height: auto;
+  }
+  &__col2 {
+    @media only screen and (max-width: 56.25em) {
+      padding: 1rem;
+      .text {
+        //background-color: #ffffff86;
+        padding: 0.5rem;
+      }
+    }
+  }
 }
 
 ///////////////Universal
