@@ -1,0 +1,29 @@
+.testimonial {
+  padding: 4rem 10rem;
+  background-color: rebeccapurple;
+  .head2 {
+    color: #9dda26;
+  }
+}
+.card-testi {
+  background-color: #fff;
+  padding: 3rem;
+  &__top {
+    width: 100%;
+    background-color: rebeccapurple;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+  &__img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+  }
+  &__author {
+    font-size: 2rem;
+    span {
+      display: block;
+    }
+  }
+}

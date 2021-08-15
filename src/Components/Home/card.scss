@@ -1,0 +1,113 @@
+.products {
+  padding: 4rem;
+  padding-top: 12rem;
+
+  &__listholder {
+    padding: 2rem;
+  }
+}
+.head3 {
+  span {
+    color: #ffff;
+  }
+}
+.cardHolder {
+  padding: 1rem 6rem;
+  margin-bottom: 3rem;
+}
+.product {
+  z-index: 10;
+  background: #ffffff;
+  /* background-image: linear-gradient(
+      to bottom right,
+      rgb(255, 207, 153),
+      rgb(255, 223, 186)
+    ); */
+  border-radius: 9px;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 16px 40px rgba(154, 170, 207, 0.116);
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__btnholder {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  &__btn {
+    width: 100%;
+    font-weight: 300;
+    font-size: 1.7rem;
+    font-family: inherit;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    background-color: #f68d2b;
+    margin-top: 2rem;
+    transition: all 0.2s;
+    outline: none;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      color: #f68d2b;
+      background-color: #ffffff;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    //width: 100%;
+    margin: 0 1rem;
+    border-radius: 0.6rem;
+    background: #ffffff;
+
+    box-shadow: 0px 16px 40px rgba(154, 170, 207, 0.2);
+    &__dectext {
+      width: 100%;
+      line-height: 121% !important;
+    }
+    &__top {
+      margin: 2rem 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__text {
+      letter-spacing: 0.005em;
+      font-size: 1.4rem;
+      color: rgba(129, 129, 131, 0.29);
+    }
+    &__img {
+      width: 17rem;
+      transition: all 1s;
+    }
+  }
+}
+.card {
+  box-shadow: 0px 16px 40px rgba(154, 170, 207, 0.2);
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  .text {
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  h3 {
+    font-size: 1.6rem;
+    color: #ff4e66;
+  }
+}

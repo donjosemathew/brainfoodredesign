@@ -7,8 +7,9 @@
   position: absolute;
   z-index: -1;
   top: 0;
+}
+.abstratct2 {
   @media only screen and (max-width: 56.25em) {
-    bottom: 0 !important;
-    //top: 20rem;
+    top: 20rem;
   }
 }
