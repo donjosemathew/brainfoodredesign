@@ -2,6 +2,7 @@ import React from "react";
 import About from "../Components/Home/about";
 import Award from "../Components/Home/award";
 import Feature from "../Components/Home/feature";
+import GridGallery from "../Components/Home/gridGallery";
 import Header from "../Components/Home/header";
 import HowTouse from "../Components/Home/howToUse";
 import ProductWindow from "../Components/Home/Products";
@@ -26,10 +27,19 @@ const Home = () => {
           alt="Abstarct"
           className="abstratct abstratct2"
         />
+        greenAbstract
         <ProductWindow />
         <HowTouse />
+      </div>
+      <div className="ab-holder ab-holder2">
+        <img
+          src="/img/Home/greenAbstract.svg"
+          alt="Abstarct"
+          className="abstratct abstratct2"
+        />
         <Testimonial />
       </div>
+      <GridGallery />
     </>
   );
 };

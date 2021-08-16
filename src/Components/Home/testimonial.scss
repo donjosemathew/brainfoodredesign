@@ -1,29 +1,55 @@
 .testimonial {
-  padding: 4rem 10rem;
-  background-color: rebeccapurple;
+  padding: 4rem 6rem;
+  @media only screen and (max-width: 56.25em) {
+    padding: 4rem 3rem;
+  }
   .head2 {
     color: #9dda26;
   }
 }
+.cardHolder {
+  //background-color: #ff9100;
+  padding: 3rem;
+}
 .card-testi {
   background-color: #fff;
   padding: 3rem;
+  margin: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  min-height: 300px;
+  box-shadow: 0px 4px 38px 5px rgba(153, 153, 153, 0.2);
+  &__text {
+    font-size: 1.9rem;
+    font-weight: 300;
+    font-style: italic;
+  }
   &__top {
     width: 100%;
-    background-color: rebeccapurple;
+
     padding: 2rem;
     display: flex;
     flex-direction: row;
   }
   &__img {
-    height: 10rem;
-    width: 10rem;
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
     border-radius: 50%;
   }
   &__author {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 110%;
+    color: #ff9100;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 2rem;
     span {
       display: block;
+      font-size: 1.4rem;
     }
   }
 }

@@ -1,0 +1,83 @@
+////////////////////////////
+////Grid gallery
+
+.gridgallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @media only screen and (max-width: 56.25em) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__col {
+    height: 31rem;
+    //background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    transition: all 1s;
+    @media only screen and (max-width: 56.25em) {
+      height: 30vh;
+      background-position: center;
+    }
+  }
+  &__text {
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 80%;
+  }
+}
+.col1 {
+  background-image: linear-gradient(rgba(6, 6, 6, 0.12), rgba(6, 6, 6, 0.12)),
+    url("../Home/review/child1.jpg");
+
+  &:hover {
+    background-image: linear-gradient(rgba(6, 6, 6, 0), rgba(6, 6, 6, 0)),
+      url("../Home/review/child1.jpg");
+  }
+  @media only screen and (max-width: 56.25em) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+.col2 {
+  background-color: #f68d2b;
+  @media only screen and (max-width: 56.25em) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+.col3 {
+  background-image: linear-gradient(rgba(6, 6, 6, 0.12), rgba(6, 6, 6, 0.12)),
+    url("../Home/review/child2.jpg");
+  &:hover {
+    background-image: linear-gradient(rgba(6, 6, 6, 0), rgba(6, 6, 6, 0)),
+      url("../Home/review/child2.jpg");
+  }
+  @media only screen and (max-width: 56.25em) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+.col4 {
+  background-color: #2979ff;
+  @media only screen and (max-width: 56.25em) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+.col5 {
+  background-image: linear-gradient(rgba(6, 6, 6, 0.12), rgba(6, 6, 6, 0.12)),
+    url("../Home/review/child3.jpg");
+  &:hover {
+    background-image: linear-gradient(rgba(6, 6, 6, 0), rgba(6, 6, 6, 0)),
+      url("../Home/review/child3.jpg");
+  }
+  @media only screen and (max-width: 56.25em) {
+    background-position: right;
+  }
+}
+.col6 {
+  background-color: #00e676;
+} ///////////////////
