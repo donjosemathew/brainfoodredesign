@@ -9,6 +9,9 @@
 .head3 {
   span {
     color: #ffff;
+    @media only screen and (max-width: 56.25em) {
+      color: #000000;
+    }
   }
 }
 .cardHolder {

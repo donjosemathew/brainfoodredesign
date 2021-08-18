@@ -2,6 +2,9 @@
   height: auto;
   // background-color: aqua;
   padding: 8rem;
+  @media only screen and (max-width: 56.25em) {
+    padding: 3rem;
+  }
   &__btm {
     display: flex;
     flex-direction: row;
@@ -17,7 +20,8 @@
         width: 100%;
       }
       span {
-        color: black;
+        font-weight: 500;
+        color: black !important;
       }
     }
   }

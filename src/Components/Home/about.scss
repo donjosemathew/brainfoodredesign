@@ -1,12 +1,15 @@
 .about {
   padding: 3rem;
-  height: 80vh;
+  //height: 80vh;
   //background-color: rebeccapurple;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   @media only screen and (max-width: 56.25em) {
-    display: block;
+    display: flex;
     //background-color: red;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     height: auto;
   }
   &__col2 {
@@ -43,6 +46,10 @@
   font-size: 1.9rem;
   letter-spacing: -0.03em;
   line-height: 150%;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.9rem !important;
+    width: 100%;
+  }
 }
 .btn {
   margin-top: 2rem;

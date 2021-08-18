@@ -6,6 +6,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  @media only screen and (max-width: 56.25em) {
+    margin: 0;
+  }
   .head2 {
     color: #ff4e66 !important;
     text-align: center;
@@ -25,6 +28,10 @@
   &__img {
     height: 30rem;
     border-radius: 0.5rem;
+    @media only screen and (max-width: 56.25em) {
+      height: auto;
+      width: 70vw;
+    }
   }
   &__icn {
     position: absolute;

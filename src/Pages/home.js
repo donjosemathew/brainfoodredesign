@@ -2,6 +2,7 @@ import React from "react";
 import About from "../Components/Home/about";
 import Award from "../Components/Home/award";
 import Feature from "../Components/Home/feature";
+import Footer from "../Components/Home/footer/footer";
 import GridGallery from "../Components/Home/gridGallery";
 import Header from "../Components/Home/header";
 import HowTouse from "../Components/Home/howToUse";
@@ -27,7 +28,7 @@ const Home = () => {
           alt="Abstarct"
           className="abstratct abstratct2"
         />
-        greenAbstract
+
         <ProductWindow />
         <HowTouse />
       </div>
@@ -35,11 +36,12 @@ const Home = () => {
         <img
           src="/img/Home/greenAbstract.svg"
           alt="Abstarct"
-          className="abstratct abstratct2"
+          className=" abstratct abstratct3"
         />
         <Testimonial />
       </div>
       <GridGallery />
+      <Footer />
     </>
   );
 };
