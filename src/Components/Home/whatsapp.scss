@@ -1,0 +1,37 @@
+//////////////
+//whatsapp
+.contactWhatsapp {
+  position: fixed;
+  cursor: pointer;
+  display: inline-block;
+  bottom: 5rem;
+  right: 3rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 0.6rem rgba(78, 78, 78, 0.116);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  &_icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: #4fce5d;
+  }
+  &:hover {
+    animation: btnDance 1s ease-in-out infinite;
+  }
+}
+@keyframes btnDance {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

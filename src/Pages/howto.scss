@@ -1,0 +1,35 @@
+.list-howto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  width: 100%;
+  //background-color: black;
+}
+.howto-item {
+  padding: 4rem;
+
+  width: 50%;
+  @media only screen and (max-width: 56.25em) {
+    width: 100%;
+    //display: none;
+  }
+}
+.howtohead {
+  color: #ffa046;
+  font-size: 3rem;
+  line-height: 110%;
+  margin-bottom: 2.2rem;
+  text-align: center;
+}
+.holder-howto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  // background-color: blue;
+
+  margin: 1rem;
+}

@@ -8,6 +8,7 @@ import Header from "../Components/Home/header";
 import HowTouse from "../Components/Home/howToUse";
 import ProductWindow from "../Components/Home/Products";
 import Testimonial from "../Components/Home/Testimonial";
+import Whatsapp from "../Components/Home/whatsapp";
 import WhyBrainFood from "../Components/Home/whybrainfood";
 import "./home.scss";
 const Home = () => {
@@ -42,6 +43,7 @@ const Home = () => {
       </div>
       <GridGallery />
       <Footer />
+      <Whatsapp />
     </>
   );
 };
