@@ -1,6 +1,6 @@
 import React from "react";
 import "./whybrainfood.scss";
-const WhyBrainFood = () => {
+const WhyBrainFood = ({ image }) => {
   return (
     <>
       <div className="whybrainfood">
@@ -37,6 +37,9 @@ const WhyBrainFood = () => {
           src="/img/Home/MotherChild.webp"
           alt="Mother Child"
           className="whybrainfood__motherimg"
+          style={{
+            display: !image ? "none" : "block",
+          }}
         />
       </div>
     </>

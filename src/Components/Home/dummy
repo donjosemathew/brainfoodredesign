@@ -1,0 +1,52 @@
+  <div className="productwindow">
+          <div className="productwindow__col productwindow__col1">
+            <div className="product productWin">
+              <div className="product__card">
+                <img
+                  src="img/itemlistwebp/1.webp"
+                  alt="Image Of product"
+                  className="product__card__img"
+                  id="smlimg"
+                />
+                <p className="product__card__text">BrainFoods</p>
+              </div>
+              <div className="product__card__top">
+                <h3 className="cardNme">CardName</h3>
+                <h3 className="pricebold">778 <span className="price">₹</span></h3>
+              </div>
+              <p
+                className="paragraph cfeatures__item__text product__card__dectext shorttext"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmo
+              </p>
+              <button className="product__btn">Buy Now</button>
+            </div>
+          </div>
+          <div className="productwindow__col" id="productview">
+            <h3>Card Set</h3>
+            <h2 className="sectionText">Animals</h2>
+            <div className="productwindow__select remove">
+              <div className="productitemlist__item2">
+                <p className="productitemlist__item__txt p1price">Colours</p>
+                <p className="productitemlist__item__txt p1nos">Colours</p>
+              </div>
+              <div className="productitemlist__item2">
+                <p className="productitemlist__item__txt p2price">Colours</p>
+                <p className="productitemlist__item__txt p2nos">Colours</p>
+              </div>
+            </div>
+            <p className="paragraph about__text longtext">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Habitasse plapiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor inntor elit, sed do e sed
+              do
+            </p>
+            <br /><br />
+            <div className="productwindow__imagehoder">
+              <div className="productwindow__imagehoder__col1"></div>
+            </div>
+          </div>
+        </div>

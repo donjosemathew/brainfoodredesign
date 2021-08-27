@@ -22,7 +22,7 @@ const Home = () => {
       </div>
       <Award />
 
-      <WhyBrainFood />
+      <WhyBrainFood image={true} />
       <div className="ab-holder ab-holder2">
         <img
           src="/img/Home/redAbstract.svg"
