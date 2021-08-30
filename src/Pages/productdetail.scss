@@ -64,8 +64,14 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem;
+  @media only screen and (max-width: 56.25em) {
+    display: block;
+  }
   &__col1 {
     padding: 2rem 14rem;
+    @media only screen and (max-width: 56.25em) {
+      padding: 2rem 8rem;
+    }
   }
   &__text {
     font-size: 1.8rem;

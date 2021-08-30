@@ -10,10 +10,12 @@ import ProductWindow from "../Components/Home/Products";
 import Testimonial from "../Components/Home/Testimonial";
 import Whatsapp from "../Components/Home/whatsapp";
 import WhyBrainFood from "../Components/Home/whybrainfood";
+import Nav from "../Components/Nav/Nav";
 import "./home.scss";
 const Home = () => {
   return (
     <>
+      <Nav />
       <Header />
       <div className="ab-holder">
         <About />
