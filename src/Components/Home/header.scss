@@ -2,6 +2,9 @@ h1 {
   font-size: 3rem;
   color: #fff;
 }
+.header2 {
+  height: 50vh;
+}
 .header {
   height: 100vh;
   width: 100%;
@@ -18,8 +21,15 @@ h1 {
     position: absolute;
     top: 3rem;
     left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     @media only screen and (max-width: 56.25em) {
       top: 5.2rem;
+    }
+    &__img {
+      height: 5rem;
     }
   }
   &__girl {
@@ -80,14 +90,15 @@ h1 {
       text-align: center;
     }
   }
-  &__sub2 {
+  &__sub3 {
     color: #fff;
-    font-size: 2.9rem;
-    line-height: 100%;
-    font-weight: 500;
-    margin-top: 1rem;
+    font-size: 5rem;
+
     @media only screen and (max-width: 56.25em) {
       text-align: center;
     }
   }
+}
+.header2 {
+  height: 65vh;
 }

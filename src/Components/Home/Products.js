@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { IoArrowForwardCircleSharp } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 const data = [
   {
     head: "Body Parts",
@@ -43,7 +44,7 @@ const ProductWindow = () => {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    speed: 1000,
+
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
@@ -102,21 +103,41 @@ const ProductWindow = () => {
                     </h3>
                   </div>
                   <p class="text ">{item.desc}</p>
-                  <button class="product__btn">Buy Now</button>
+                  <button
+                    class="product__btn"
+                    onClick={() =>
+                      window.open(
+                        `https://wa.me/+919321858455/?text=Hi, Intrested in ${item.head} Products`,
+                        "_blank"
+                      )
+                    }
+                  >
+                    Buy Now
+                  </button>
                 </div>
               </div>
             );
           })}
         </Slider>
         <div className="product__btnholder">
-          <button className="btn" onClick={() => {}}>
-            Watch Video
-            <IoArrowForwardCircleSharp
-              className="icon"
-              size="1.6em
+          <NavLink
+            to="/product"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            style={{
+              textDecoration: "none",
+            }}
+          >
+            <button className="btn" onClick={() => {}}>
+              Get More Products
+              <IoArrowForwardCircleSharp
+                className="icon"
+                size="1.6em
           "
-            />
-          </button>
+              />
+            </button>
+          </NavLink>
         </div>
       </div>
     </div>

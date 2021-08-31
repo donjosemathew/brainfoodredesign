@@ -5,9 +5,7 @@ const GridGallery = () => {
       <div class="gridgallery__col col1"></div>
       <div class="gridgallery__col col2">
         <p class="gridgallery__text">
-          Free shipping!
-          <br />
-          Utility box for easy storage
+          Utility box <br /> for easy storage
         </p>
       </div>
       <div class="gridgallery__col col3"></div>

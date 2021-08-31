@@ -1,9 +1,10 @@
 import React from "react";
 import "./about.scss";
 import { IoArrowForwardCircleSharp } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="home">
       <div className="about__col1">
         <div className="grid-img img-container1">
           <div className="grid-img__item">
@@ -57,14 +58,24 @@ const About = () => {
           concepts in children. To help your children be the icons of tomorrow,
           Brain Foods Flashcards stays as the best path.
         </p>
-        <button className="btn">
-          Learn More{" "}
-          <IoArrowForwardCircleSharp
-            className="icon"
-            size="1.6em
+        <NavLink
+          to="/about"
+          style={{
+            textDecoration: "none",
+          }}
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        >
+          <button className="btn">
+            Learn More
+            <IoArrowForwardCircleSharp
+              className="icon"
+              size="1.6em
           "
-          />
-        </button>
+            />
+          </button>
+        </NavLink>
       </div>
     </div>
   );

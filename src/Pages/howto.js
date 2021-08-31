@@ -3,6 +3,8 @@ import Whatsapp from "../Components/Home/whatsapp";
 import ReactPlayer from "react-player/lazy";
 import "./howto.scss";
 import Footer from "../Components/Home/footer/footer";
+import HeaderSub from "../Components/Home/headerSub";
+import Nav from "../Components/Nav/Nav";
 const HowToUse = () => {
   const data = [
     {
@@ -51,25 +53,29 @@ const HowToUse = () => {
     },
   ];
   return (
-    <div className="howtopage">
-      <div className="head">
-        <h1>sas</h1>
-      </div>
-      <div className="list-howto">
-        {data.map((item, index) => {
-          return (
-            <div className="holder-howto">
-              <div className="howto-item" key={index}>
-                <h2 className="howtohead">{item.head}</h2>
-                <ReactPlayer width="100%" url={item.link} />
+    <>
+      <HeaderSub head={"How to use "} />
+      <Nav />
+      <div className="howtopage">
+        <div className="head">
+          <h1>sas</h1>
+        </div>
+        <div className="list-howto">
+          {data.map((item, index) => {
+            return (
+              <div className="holder-howto">
+                <div className="howto-item" key={index}>
+                  <h2 className="howtohead">{item.head}</h2>
+                  <ReactPlayer width="100%" url={item.link} />
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
+        <Whatsapp />
+        <Footer />
       </div>
-      <Whatsapp />
-      <Footer />
-    </div>
+    </>
   );
 };
 

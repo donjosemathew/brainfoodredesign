@@ -3,6 +3,8 @@ import Footer from "../Components/Home/footer/footer";
 import WhyBrainFood from "../Components/Home/whybrainfood";
 import "./productdetail.scss";
 import { Markup } from "interweave";
+import HeaderSub from "../Components/Home/headerSub";
+import Nav from "../Components/Nav/Nav";
 const ProductDetails = () => {
   const [selected, SetSelcted] = useState("Animals");
   const scetionNames = [
@@ -162,226 +164,239 @@ const ProductDetails = () => {
   }
   const [index, setIndex] = useState(0);
   return (
-    <div className="productdetails">
-      <h1>Hi</h1>
-      <WhyBrainFood image={false} />
-      <div className="products">
-        <p className="sectiontext">Get it now</p>
-        <h2 className="head2">
-          Available
-          <span>Sets For Your Child</span>
-        </h2>
-
-        <div class="productitemlist">
-          <div
-            className="productitemlist__item"
-            onClick={() => {
-              SetSelcted(scetionNames[0]);
-            }}
-          >
-            <img
-              src="img/itemlist/animal.svg"
-              alt=" Items"
-              className="productitemlist__item__img"
-            />
-            <p className="productitemlist__item__txt">Animals</p>
-          </div>
-          <div
-            className="productitemlist__item"
-            onClick={() => {
-              SetSelcted(scetionNames[1]);
-            }}
-          >
-            <img
-              src="img/itemlist/lang.svg"
-              alt=" Items"
-              className="productitemlist__item__img"
-            />
-            <p className="productitemlist__item__txt">Sight Words</p>
-          </div>
-          <div
-            className="productitemlist__item"
-            onClick={() => {
-              SetSelcted(scetionNames[2]);
-            }}
-          >
-            <img
-              src="img/itemlist/body.svg"
-              alt="Items"
-              className="productitemlist__item__img"
-            />
-            <p className="productitemlist__item__txt">Body Parts</p>
-          </div>
-          <div
-            className="productitemlist__item"
-            onClick={() => {
-              SetSelcted(scetionNames[3]);
-            }}
-          >
-            <img
-              src="img/itemlist/veg.svg"
-              alt="Items"
-              className="productitemlist__item__img"
-            />
-            <p className="productitemlist__item__txt">Vegetables & Fruits</p>
-          </div>
-          <div
-            className="productitemlist__item"
-            onClick={() => {
-              SetSelcted(scetionNames[4]);
-            }}
-          >
-            <img
-              src="img/itemlist/flag.svg"
-              alt="Items"
-              className="productitemlist__item__img"
-            />
-            <p className="productitemlist__item__txt">World Flags</p>
-          </div>
-          <div
-            className="productitemlist__item"
-            onClick={() => {
-              SetSelcted(scetionNames[5]);
-            }}
-          >
-            <img
-              src="img/itemlist/number.svg"
-              alt="Items"
-              className="productitemlist__item__img"
-            />
-            <p className="productitemlist__item__txt">Numbers</p>
-          </div>
-          <div
-            className="productitemlist__item"
-            onClick={() => {
-              SetSelcted(scetionNames[6]);
-            }}
-          >
-            <img
-              src="img/itemlist/cash.svg"
-              alt="Items"
-              className="productitemlist__item__img"
-            />
-            <p className="productitemlist__item__txt">Currency</p>
-          </div>
-          <div
-            className="productitemlist__item"
-            onClick={() => {
-              SetSelcted(scetionNames[7]);
-            }}
-          >
-            <img
-              src="img/itemlist/om.svg"
-              alt="Items"
-              className="productitemlist__item__img"
-            />
-            <p className="productitemlist__item__txt">Vedic Mantras</p>
-          </div>
-
-          <div
-            className="productitemlist__item"
-            onClick={() => {
-              SetSelcted(scetionNames[8]);
-            }}
-          >
-            <img
-              src="img/itemlist/id.svg"
-              alt="Items"
-              className="productitemlist__item__img"
-            />
-            <p className="productitemlist__item__txt">Life Cycle</p>
-          </div>
-
-          <div
-            className="productitemlist__item"
-            onClick={() => {
-              SetSelcted(scetionNames[9]);
-            }}
-          >
-            <img
-              src="img/itemlist/brush-solid 1.svg"
-              alt="Items"
-              className="productitemlist__item__img"
-            />
-            <p className="productitemlist__item__txt">Colours</p>
-          </div>
-        </div>
-      </div>
-      <div className="productwindow">
-        <div className="productwindow__col1">
-          <div className="card">
-            <div class="product__card">
-              <img
-                src={`img/itemlistwebp/${
-                  scetionNames.indexOf(selected) + 1
-                }.webp`}
-                alt="Of product"
-                class="product__card__img"
-              />
-              <p class="product__card__text">BrainFoods</p>
-            </div>
-            <div class="product__card__top">
-              <h3>{selected}</h3>
-              <h3 class="pricebold">
-                {multiple.includes(selected)
-                  ? sectionData[selected][index].price
-                  : sectionData[selected].price}
-
-                <span class="price">₹</span>
-              </h3>
-            </div>
-            <p class="text ">
-              {multiple.includes(selected)
-                ? sectionData[selected][index].shortDes
-                : sectionData[selected].shortDes}
-            </p>
-            <button class="product__btn">Buy Now</button>
-          </div>
-        </div>
-        <div className="productwindow__col2">
-          <p className="sectiontext">Card Set</p>
-          <h2 className="head2 ">
-            <span>{selected}</span>
+    <>
+      <HeaderSub head={"Products"} />
+      <Nav />
+      <div className="productdetails">
+        <WhyBrainFood image={false} />
+        <div className="products">
+          <p className="sectiontext">Get it now</p>
+          <h2 className="head2">
+            Available
+            <span>Sets For Your Child</span>
           </h2>
 
-          {multiple.includes(selected) ? (
-            <div className="section-btns">
-              <div className="section-btns__btn" onClick={() => setIndex(0)}>
-                <p className="section-btns__text section-btns__price">
-                  {sectionData[selected][0].price}₹
-                </p>
-                <p className="section-btns__text">
-                  {sectionData[selected][0].number}Cards
-                </p>
-              </div>
-              <div className="section-btns__btn" onClick={() => setIndex(1)}>
-                <p className="section-btns__text section-btns__price">
-                  {sectionData[selected][1].price}₹
-                </p>
-                <p className="section-btns__text">
-                  {sectionData[selected][1].number}Cards
-                </p>
-              </div>
+          <div class="productitemlist">
+            <div
+              className="productitemlist__item"
+              onClick={() => {
+                SetSelcted(scetionNames[0]);
+              }}
+            >
+              <img
+                src="img/itemlist/animal.svg"
+                alt=" Items"
+                className="productitemlist__item__img"
+              />
+              <p className="productitemlist__item__txt">Animals</p>
             </div>
-          ) : null}
-          <p className="productwindow__text longtext">
-            <Markup
-              content={
-                multiple.includes(selected)
-                  ? sectionData[selected][index].longDesc
-                  : sectionData[selected].longDesc
-              }
-            ></Markup>
-          </p>
-          <img
-            src={`/img/itemBig/${scetionNames.indexOf(selected) + 1}.webp`}
-            alt="Product"
-            className="productwindow__img"
-          />
+            <div
+              className="productitemlist__item"
+              onClick={() => {
+                SetSelcted(scetionNames[1]);
+              }}
+            >
+              <img
+                src="img/itemlist/lang.svg"
+                alt=" Items"
+                className="productitemlist__item__img"
+              />
+              <p className="productitemlist__item__txt">Sight Words</p>
+            </div>
+            <div
+              className="productitemlist__item"
+              onClick={() => {
+                SetSelcted(scetionNames[2]);
+              }}
+            >
+              <img
+                src="img/itemlist/body.svg"
+                alt="Items"
+                className="productitemlist__item__img"
+              />
+              <p className="productitemlist__item__txt">Body Parts</p>
+            </div>
+            <div
+              className="productitemlist__item"
+              onClick={() => {
+                SetSelcted(scetionNames[3]);
+              }}
+            >
+              <img
+                src="img/itemlist/veg.svg"
+                alt="Items"
+                className="productitemlist__item__img"
+              />
+              <p className="productitemlist__item__txt">Vegetables & Fruits</p>
+            </div>
+            <div
+              className="productitemlist__item"
+              onClick={() => {
+                SetSelcted(scetionNames[4]);
+              }}
+            >
+              <img
+                src="img/itemlist/flag.svg"
+                alt="Items"
+                className="productitemlist__item__img"
+              />
+              <p className="productitemlist__item__txt">World Flags</p>
+            </div>
+            <div
+              className="productitemlist__item"
+              onClick={() => {
+                SetSelcted(scetionNames[5]);
+              }}
+            >
+              <img
+                src="img/itemlist/number.svg"
+                alt="Items"
+                className="productitemlist__item__img"
+              />
+              <p className="productitemlist__item__txt">Numbers</p>
+            </div>
+            <div
+              className="productitemlist__item"
+              onClick={() => {
+                SetSelcted(scetionNames[6]);
+              }}
+            >
+              <img
+                src="img/itemlist/cash.svg"
+                alt="Items"
+                className="productitemlist__item__img"
+              />
+              <p className="productitemlist__item__txt">Currency</p>
+            </div>
+            <div
+              className="productitemlist__item"
+              onClick={() => {
+                SetSelcted(scetionNames[7]);
+              }}
+            >
+              <img
+                src="img/itemlist/om.svg"
+                alt="Items"
+                className="productitemlist__item__img"
+              />
+              <p className="productitemlist__item__txt">Vedic Mantras</p>
+            </div>
+
+            <div
+              className="productitemlist__item"
+              onClick={() => {
+                SetSelcted(scetionNames[8]);
+              }}
+            >
+              <img
+                src="img/itemlist/id.svg"
+                alt="Items"
+                className="productitemlist__item__img"
+              />
+              <p className="productitemlist__item__txt">Life Cycle</p>
+            </div>
+
+            <div
+              className="productitemlist__item"
+              onClick={() => {
+                SetSelcted(scetionNames[9]);
+              }}
+            >
+              <img
+                src="img/itemlist/brush-solid 1.svg"
+                alt="Items"
+                className="productitemlist__item__img"
+              />
+              <p className="productitemlist__item__txt">Colours</p>
+            </div>
+          </div>
         </div>
+        <div className="productwindow">
+          <div className="productwindow__col1">
+            <div className="card">
+              <div class="product__card">
+                <img
+                  src={`img/itemlistwebp/${
+                    scetionNames.indexOf(selected) + 1
+                  }.webp`}
+                  alt="Of product"
+                  class="product__card__img"
+                />
+                <p class="product__card__text">BrainFoods</p>
+              </div>
+              <div class="product__card__top">
+                <h3>{selected}</h3>
+                <h3 class="pricebold">
+                  {multiple.includes(selected)
+                    ? sectionData[selected][index].price
+                    : sectionData[selected].price}
+
+                  <span class="price">₹</span>
+                </h3>
+              </div>
+              <p class="text ">
+                {multiple.includes(selected)
+                  ? sectionData[selected][index].shortDes
+                  : sectionData[selected].shortDes}
+              </p>
+              <button
+                class="product__btn"
+                onClick={() =>
+                  window.open(
+                    `https://wa.me/+919321858455/?text=Hi, Intrested in ${selected} Cards`,
+                    "_blank"
+                  )
+                }
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <div className="productwindow__col2">
+            <p className="sectiontext">Card Set</p>
+            <h2 className="head2 ">
+              <span>{selected}</span>
+            </h2>
+
+            {multiple.includes(selected) ? (
+              <div className="section-btns">
+                <div className="section-btns__btn" onClick={() => setIndex(0)}>
+                  <p className="section-btns__text section-btns__price">
+                    {sectionData[selected][0].price}₹
+                  </p>
+                  <p className="section-btns__text">
+                    {sectionData[selected][0].number}Cards
+                  </p>
+                </div>
+                <div className="section-btns__btn" onClick={() => setIndex(1)}>
+                  <p className="section-btns__text section-btns__price">
+                    {sectionData[selected][1].price}₹
+                  </p>
+                  <p className="section-btns__text">
+                    {sectionData[selected][1].number}Cards
+                  </p>
+                </div>
+              </div>
+            ) : null}
+            <p className="productwindow__text longtext">
+              <Markup
+                content={
+                  multiple.includes(selected)
+                    ? sectionData[selected][index].longDesc
+                    : sectionData[selected].longDesc
+                }
+              ></Markup>
+            </p>
+            <img
+              src={`/img/itemBig/${scetionNames.indexOf(selected) + 1}.webp`}
+              alt="Product"
+              className="productwindow__img"
+            />
+          </div>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 

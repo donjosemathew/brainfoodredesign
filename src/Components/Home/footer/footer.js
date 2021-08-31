@@ -15,24 +15,24 @@ const Footer = () => {
     <footer>
       <div className="footer">
         <div className="footer__col1">
-          <div className="footer__col1__head">BeylaBee</div>
+          <div className="footer__col1__head">BrainFoods</div>
           <div className="text">
             <a
               href="mailto:beylaofficial@gmail.com"
               className="footer__col1__mail text"
             >
               <IoMail className="footer__icn" />
-              beylaofficial@gmail.com
+              brainfoods2020@gmail.com
             </a>
           </div>
           <div className="text">
             <IoLocationSharp className="footer__icn" />
-            Kothad, Kochi
+            Thane, Mumbai
           </div>
           <div className="text">
             <IoCall className="footer__icn" />
-            <a href="tel:+91 80863 24545" className="footer__col1__mail text">
-              +91 80863 24545
+            <a href="tel:+91 93218 58455" className="footer__col1__mail text">
+              +91 93218 58455
             </a>
           </div>
         </div>
@@ -40,7 +40,14 @@ const Footer = () => {
       <div className="text copytext">
         <div>
           © 2020 | All rights reserved<br></br> Designed And Developed by &nbsp;
-          <a href="https://www.oronium.com/" className="oronium">
+          <a
+            style={{
+              textDecoration: "none",
+              color: "inherit",
+            }}
+            href="https://www.oronium.com/"
+            className="oronium"
+          >
             Oronium
           </a>
         </div>
@@ -50,7 +57,10 @@ const Footer = () => {
               color="#b9b9b9"
               className="copytext__icn"
               onClick={() => {
-                window.open("https://www.beylabee.com/", "_blank");
+                window.open(
+                  "https://api.whatsapp.com/send?phone=919321858455",
+                  "_blank"
+                );
               }}
             />
           </Link>
@@ -59,14 +69,17 @@ const Footer = () => {
               color="#b9b9b9"
               className="copytext__icn"
               onClick={() => {
-                window.open("https://www.facebook.com/BeylaScience", "_blank");
+                window.open(
+                  "https://www.facebook.com/brainfoods2020/",
+                  "_blank"
+                );
               }}
             />
           </Link>
           <Link to="/">
             <IoLogoInstagram
               onClick={() => {
-                window.open("https://www.instagram.com/beyla_bee/", "_blank");
+                window.open("https://instagram.com/brainfoods2020", "_blank");
               }}
               color="#b9b9b9"
               className="copytext__icn"
@@ -75,7 +88,7 @@ const Footer = () => {
           <Link to="">
             <IoLogoTwitter
               onClick={(e) => {
-                window.open("https://twitter.com/BeeBeyla", "_blank");
+                window.open("https://twitter.com/", "_blank");
               }}
               color="#b9b9b9"
               className="copytext__icn"
@@ -85,7 +98,7 @@ const Footer = () => {
             <IoLogoYoutube
               onClick={(e) => {
                 window.open(
-                  "https://www.youtube.com/channel/UC-objGcIMWI3E-d0Hmcj-TQ",
+                  "https://www.youtube.com/channel/UCykVRRWnJgKTvUIBS5elyaw",
                   "_blank"
                 );
               }}
